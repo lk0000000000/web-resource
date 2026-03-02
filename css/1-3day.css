@@ -1,0 +1,30 @@
+#header{
+    display: flex;
+    grid-template-columns: 25%, 25%, 25%, 25%;
+    /*grid width: 25%;*/
+    /*flex: 50%;*/
+    padding: 10px;
+    background-color: bisque;
+    border-radius: 15px;
+    /*align-items: center;*/
+}
+.column{
+    width: 50%;
+}
+.headerText{
+  font-family: Arial, Helvetica, sans-serif;  
+}
+a:link{
+color: greenyellow;
+}
+a:visited{
+    color:green;
+}
+a:hover{
+    text-decoration: line-through;
+}
+a:active{
+    color: blueviolet;
+    text-decoration: dotted;
+}
+
