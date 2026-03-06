@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 h3{
     /*text-align: left;*/
 }
@@ -12,18 +15,19 @@ h3{
 /*ask if possible to have global css styling on multiple pages
 also to make header stick, body to scroll
 */
-#header{
-    display: flex;
-    /*grid-template-columns: 25%, 25%, 25%, 25%;*/
+.header{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     /*grid width: 25%;*/
     /*flex: 50%;*/
     padding: 10px;
     background-color: #1B9BF7;
     border-radius: 15px;
     /*align-items: center;*/
-}
-.column{
-    width: 50%;
+    width: 100%;
+    height: 20%;
+    transition-duration: 2s;
+
 }
 .headerText{
   font-family: Radley;
@@ -45,20 +49,22 @@ a:active{
 
 #Homepage{
     padding-left: 30px;
+    margin-top: 70px;
+    margin-bottom: 30px;
     /*min-height: auto;*/
     max-height: fit-content;
     position:relative;
-    align-items: center;
-    max-width: 75%;
+    /*align-items: center;*/
 }
 h1{
     font-family: Radley;
 }
-p{
-    font-family: Radley;
+#welcome{
+    max-width: 75%;
 }
 #welcomeText{
     color: grey;
+    font-family: Radley;
 }
 #footer{
     display: flex;
@@ -74,11 +80,50 @@ p{
 }
 
 #pageCards{
-    /*border-bottom: 10px;*/
-    background-color: black;
-    color: red;
-    height: 100px;
-    width: 100px;
-    display: flex;
-    grid-template-columns: 33px, 33%, 33%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*border: 1px solid black;*/
+    /*background-color: black;*/
+    display: grid;
+    /*background-color: red;*/
+    height: 100%;
+    width: 100%;
+    
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.card{
+    border: 1px solid #CB950C;
+    border-radius: 15px;
+    /*transition: 0.5s;*/
+}
+
+.active{
+    height: 100%;
+    background-color: white;
+    transition: 2s;
+}
+.select-card{
+    background-color: #EBC413;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    border: 1px solid #CB950C;
+  
+}
+.card-expand{
+    width: 200%;
+    transition: 0.2s;
+    z-index: +5;
+}
+
+.block{
+    height: 500px;
+    width: 500px;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
 }
