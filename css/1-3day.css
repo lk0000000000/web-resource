@@ -1,30 +1,106 @@
-#header{
-    display: flex;
-    grid-template-columns: 25%, 25%, 25%, 25%;
+*{
+    margin: 0;
+}
+@font-face {
+    font-family: Radley;
+    src: url(../fonts/Radley-Regular.ttf);
+}
+@font-face {
+    font-family: RadleyItalic;
+    src: url(../fonts/Radley-Italic.ttf);
+}
+.header{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     /*grid width: 25%;*/
     /*flex: 50%;*/
     padding: 10px;
-    background-color: bisque;
-    border-radius: 15px;
+    background-color: #1B9BF7;
+    /*border-radius: 15px;*/
     /*align-items: center;*/
-}
-.column{
-    width: 50%;
+    width: 100%;
+    height: 30px;
+    /*transition-duration: 2s;*/
+
 }
 .headerText{
-  font-family: Arial, Helvetica, sans-serif;  
+  font-family: Radley;
+  color: #F0E6C7;
 }
 a:link{
-color: greenyellow;
+    text-decoration: none;
 }
 a:visited{
-    color:green;
+    color:rgb(255, 255, 255);
 }
 a:hover{
     text-decoration: line-through;
 }
-a:active{
-    color: blueviolet;
-    text-decoration: dotted;
+h1{
+    font-family: RadleyItalic;
+    padding: 60px;
+}
+#article{
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 5cm;
+    font-family: Radley;
+    padding: 60px;
 }
 
+#weather-filter{
+font-family: Radley;
+
+    padding: 50px;
+    max-width: 40%;
+    border: 5px solid #1B9BF7;
+    border-radius: 15px;
+    margin: 50px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.filter-tags{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.filter-item{
+    border: 5px solid #1B9BF7;
+    border-radius: 20px;
+    text-align: center;
+    width: fit-content;
+    padding: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+.filter-toggle{
+    background-color: #1B9BF7;
+    color: #EBC413;
+}
+#main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 1cm;
+}
+.grid-item{
+    border: 5px solid #EBC413;
+    border-radius: 20px;
+    text-align: center;
+    /*width: fit-content;*/
+    padding: 20px;
+    margin: 20px;
+}
+
+#footer{
+    /*display: flex;*/
+    padding: 10px;
+    /*border-radius: 15px;*/
+    background-color: #CB950C;
+}
+.footerText{
+    font-size: xx-small;
+    font-weight: lighter;
+    color: #F0E6C7;
+    text-align: center; 
+}
