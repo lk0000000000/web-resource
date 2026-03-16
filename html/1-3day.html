@@ -9,20 +9,65 @@
     <div class="header">
             <!--</div class="column"></div>-->
         <h3 class="headerText"><a href="../index.html">Home</a></h3>
-        <h3 class="headerText"><a href="html/1-3day.html">1-3 Days</a></h3>
-        <h3 class="headerText"><a href="html/4-7day.html">4-7 Days</a></h3>
-        <h3 class="headerText"><a href="html/7+day.html">1 Week+</a></h3>
-        <h3 class="headerText"><a href="html/About.html">About</a></h3>
+        <h3 class="headerText"><a href="../html/1-3day.html">1-3 Days</a></h3>
+        <h3 class="headerText"><a href="../html/4-7day.html">4-7 Days</a></h3>
+        <h3 class="headerText"><a href="../html/7+day.html">1 Week+</a></h3>
+        <h3 class="headerText"><a href="../html/About.html">About</a></h3>
     </div>
-    <div id="1-3day">
+    <button class="openbtn" onclick="openNav()">Checklist &#9776;</button>
+    <div id="one-three-day">
         <h1>1-3 Day Trip</h1>
         
         <div id="article">
-            <p>Article text</p>
-            <p><a>E-Z Click</a> here to jump to the weather clothing calculator below!</p>
+            <p>
+Packing for a one to three day trip is nice and simple: everything that you might possibly need will fit into a humble backpack. <br>
+
+A one day trip does not require much: your toiletries and clothes don't need to leave your home, 
+since you will be returning the same day. 
+Oftentimes, you won't even be needing a charger 
+(though it's better to be safe than sorry), or, depending on 
+your method of transport, a backpack at all! <br>
+Here's a tentative list:<br>
+<ul style="list-style-type:circle;">
+    <li>Wallet, keys, phone</li>
+    <li>Headphones</li>
+    <li>Charger</li>
+    <li>Weather-appropriate clothing</li>
+</ul>
+
+
+You can choose to bring some toiletries like lip balm, perfume spray, and makeup, 
+but it really isn't necessary if you're traveling light.<br>
+
+For a two to three days stay, you will need to bring a change of clothes. 
+Depending on your scruples on personal hygiene, it can be one, 
+two, or three shirts. As a general rule, a shirt can be worn twice 
+without issue, so a two to three day packing list can look 
+something like this:<br>
+<ul style="list-style-type:circle;">
+    <li>1 or 2 pairs of socks</li>
+    <li>1 or 2 pairs of underwear</li>
+    <li>1 shirt</li>
+    <li>Toiletry bag containing a toothbrush, toothpaste, floss, deodorant, bar soap</li>
+    <li>Wallet, keys, phone</li>
+    <li>Headphones</li>
+    <li>Charger</li>
+</ul>
+
+Everything else is already on your person. This list can further be modified to include 
+any makeup or formal wear you might be needing.
+            </p>
+            <p>
+                For your planning convenience, you can use the simple clothing picker below!
+                Select the weather you are anticipating at your destination during your stay. It will
+                give you a general idea of what clothing to bring with you!
+            </p>
         </div>
+
+        
+
         <div id="weather-filter">
-            <h3>E-Z Click: What to wear based on the weather at your destination</h3>
+            <h3>What to wear based on the weather at your destination</h3>
             <div class="filter-tags">
                 
                 <div class="filter-item -0">Less than 0</div> <!--find out how to imput less than symbol-->
@@ -31,7 +76,7 @@
 
                 <div class="filter-item 15-20">15-20</div>
                 <div class="filter-item 20-25">20-25</div>
-                <div class="filter-item 25+">25+</div>
+                <div class="filter-item 25">25+</div>
                 
                 <div class="filter-item sunny">Sunny</div>
                 <div class="filter-item partcloudy">Partly cloudy</div>
@@ -73,8 +118,53 @@
         <h4 class="footerText"><a href="html/About.html">About</a></h4>
     </div>
 
+
+        <div id="sidebar" class="sidenav"> <!--checklist-->
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <div id="checklist-title">To pack</div>
+            <!--<div class="checklist-item">
+                <div class="boxes"></div>
+                <div class="checklist-text">
+                    insert text here
+                    meow
+                </div>
+                
+            </div> -->
+            <label class="checklist-item">Wallet, keys, phone, charger
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checklist-item">Headphones
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checklist-item">1 shirt
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checklist-item">2 pairs of socks
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checklist-item">2 pairs of underwear
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checklist-item">Toothbrush, toothpaste, floss, deodorant, bar soap
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+
+
+        </div>
+
+        
+
+
+
     <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
     <script src="../js/1-3day.js"></script>
 </body>
-
 </html>

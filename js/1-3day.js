@@ -21,7 +21,7 @@ $(".warm").hide()
 $(".wet").hide()
 $(".sun").hide()
 
-//think about making everything in main grid hidden at the start and appearing as the user selects
+//items appear once filter selected
 $(".-0").click(function(){
     console.log("negzero clicked")
     weatherCounter1 = weatherCounter1 +1;
@@ -92,20 +92,21 @@ $(".20-25").click(function(){
         $(".20-25").removeClass("filter-toggle")
     }
 })
-$(".25+").click(function(){ //why does this not work?!????
+$(".25").click(function(){ 
     console.log("25+ clicked")
     weatherCounter6 = weatherCounter6 +1;
     if(weatherCounter6 % 2 != 0){ //selected
-        $(".25+").addClass("filter-toggle")
+        $(".25").addClass("filter-toggle")
         //$("#main-grid div:not(.warm)").hide()
         $(".warm").show()
         
         displayCounter =$("#main-grid").children(":visible").length;
     }
     if(weatherCounter6 % 2 == 0){ //deselected
-        $(".25+").removeClass("filter-toggle")
+        $(".25").removeClass("filter-toggle")
     }
 })
+
 $(".sunny").click(function(){ //currently shows despite other weather selected
     console.log("sunny clicked")
     weatherCounter7 = weatherCounter7 +1;
@@ -121,8 +122,62 @@ $(".sunny").click(function(){ //currently shows despite other weather selected
     }
 })
 
-//add the rest of the buttons
-
+$(".partcloudy").click(function(){
+    console.log("partcloudy clicked")
+    weatherCounter8 = weatherCounter8 +1;
+    if(weatherCounter8 % 2 != 0){ //selected
+        $(".partcloudy").addClass("filter-toggle")
+        //$("#main-grid div:not(.sun)").hide()
+        //$(".sun").show()
+        
+        displayCounter =$("#main-grid").children(":visible").length;
+    }
+    if(weatherCounter8 % 2 == 0){ //deselected
+        $(".partcloudy").removeClass("filter-toggle")
+    }
+})
+$(".overcast").click(function(){
+    console.log("overcast clicked")
+    weatherCounter9 = weatherCounter9 +1;
+    if(weatherCounter9 % 2 != 0){ //selected
+        $(".overcast").addClass("filter-toggle")
+        //$("#main-grid div:not(.sun)").hide()
+        //$(".sun").show()
+        
+        displayCounter =$("#main-grid").children(":visible").length;
+    }
+    if(weatherCounter9 % 2 == 0){ //deselected
+        $(".overcast").removeClass("filter-toggle")
+    }
+})
+$(".rain").click(function(){
+    console.log("rain clicked")
+    weatherCounter10 = weatherCounter10 +1;
+    if(weatherCounter10 % 2 != 0){ //selected
+        $(".rain").addClass("filter-toggle")
+        //$("#main-grid div:not(.sun)").hide()
+        $(".wet").show()
+        
+        displayCounter =$("#main-grid").children(":visible").length;
+    }
+    if(weatherCounter10 % 2 == 0){ //deselected
+        $(".rain").removeClass("filter-toggle")
+    }
+})
+$(".snow").click(function(){
+    console.log("snow clicked")
+    weatherCounter11 = weatherCounter11 +1;
+    if(weatherCounter11 % 2 != 0){ //selected
+        $(".snow").addClass("filter-toggle")
+        //$("#main-grid div:not(.sun)").hide()
+        $(".cold").show()
+        
+        displayCounter =$("#main-grid").children(":visible").length;
+    }
+    if(weatherCounter11 % 2 == 0){ //deselected
+        $(".snow").removeClass("filter-toggle")
+    }
+})
 
 $(".reset").click(function(){ //clear all filters
     console.log("clear all filters")
@@ -148,3 +203,17 @@ $(".reset").click(function(){ //clear all filters
 
     $(".filter-item").removeClass("filter-toggle")
 })
+
+
+
+
+//sidebar checklist logic
+function openNav() {
+document.getElementById("sidebar").style.width = "15%";
+//document.body.style.backgroundColor = "rgba(0,0,0,0.15)";
+}
+
+function closeNav() {
+document.getElementById("sidebar").style.width = "0";
+//document.body.style.backgroundColor = "white";
+}

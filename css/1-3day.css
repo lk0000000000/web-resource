@@ -9,8 +9,27 @@
     font-family: RadleyItalic;
     src: url(../fonts/Radley-Italic.ttf);
 }
+@font-face {
+    font-family: Zeyada;
+    src: url(../fonts/Zeyada-Regular.ttf);
+}
+@font-face {
+    font-family: Zain;
+    src: url(../fonts/Zain-Regular.ttf);
+}
+@font-face {
+    font-family: ZainLight;
+    src: url(../fonts/Zain-Light.ttf);
+}
+@font-face {
+    font-family: ZainItalic;
+    src: url(../fonts/Zain-Italic.ttf);
+}
+
 .header{
     display: grid;
+    position: sticky;
+    top: 0;
     grid-template-columns: 20% 20% 20% 20% 20%;
     /*grid width: 25%;*/
     /*flex: 50%;*/
@@ -24,35 +43,43 @@
 
 }
 .headerText{
-  font-family: Radley;
-  color: #F0E6C7;
+  font-family: Zain;
+  color: white;
 }
-a:link{
+.header a{
     text-decoration: none;
 }
-a:visited{
+.header a:visited{
     color:rgb(255, 255, 255);
 }
-a:hover{
+.header a:hover{
     text-decoration: line-through;
 }
+
+#one-three-day{
+    margin-left: 25%;
+    margin-right:25%;
+
+}
+
+
 h1{
-    font-family: RadleyItalic;
+    font-family: Zeyada;
     padding: 60px;
+    font-size: 60px;
 }
 #article{
     margin-top: 1cm;
     margin-bottom: 1cm;
-    margin-left: 5cm;
-    font-family: Radley;
+    font-family: ZainLight;
     padding: 60px;
+    font-size: 20px;
 }
 
 #weather-filter{
-font-family: Radley;
+font-family: Zain;
 
     padding: 50px;
-    max-width: 40%;
     border: 5px solid #1B9BF7;
     border-radius: 15px;
     margin: 50px;
@@ -82,6 +109,8 @@ font-family: Radley;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin-top: 1cm;
+    
+    
 }
 .grid-item{
     border: 5px solid #EBC413;
@@ -100,7 +129,152 @@ font-family: Radley;
 }
 .footerText{
     font-size: xx-small;
-    font-weight: lighter;
+    font-family: zain;
     color: #F0E6C7;
     text-align: center; 
+}
+
+.sidenav{
+height: fit-content;
+width: 0;
+position: fixed;
+z-index: 1; /*top layer */
+top: 30%;
+right: 0;
+background-color: #F0E6C7;
+overflow-x: hidden; /* no horizontal scroll */
+overflow-y: hidden; /* no vert scroll to fix the collapse issue but i can still see it*/
+padding-top: 60px;
+padding-left: 20px;
+transition: 0.5s;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+
+#checklist-title{
+    font-family: zeyada;
+    font-size: 45px;
+    padding: 8px 8px 8px 0px;;
+}
+.checklist-item{
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+font-family: zeyada;
+color: #818181;
+display: block;
+/*transition: 0.3s;*/
+position: relative;
+cursor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+/*border: 1px solid black;*/
+}
+
+.checklist-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #F0E6C7;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.checklist-item:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checklist-item input:checked ~ .checkmark {
+  background-color: #818181;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/*.boxes{
+    width: 10px;
+    height: 10px;
+    background-color: #F0E6C7;
+    border: 1px solid black;
+}
+.checklist-text{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: zeyada;
+    color: #818181;
+     
+}*/
+
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+position: sticky;
+top: 30%;
+float: right;
+font-family: zain;
+font-size: 20px;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+
+cursor: pointer;
+background-color: #EBC413;
+color: black;
+padding: 10px 15px;
+border: none;
+}
+
+.openbtn:hover {
+  background-color: #CB950C;
+  color: white;
+}
+ 
+
+/*small screens to do*/
+@media screen and (max-width: 450px){
+
+#one-three-day{
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.sidenav {
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+
+.openbtn {
+position: sticky;
+top: 50px;
+width: 100%;
+font-family: Zain;
+font-size: 20px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
 }

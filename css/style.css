@@ -17,6 +17,8 @@ also to make header stick, body to scroll
 */
 .header{
     display: grid;
+    position: sticky;
+    top: 0;
     grid-template-columns: 20% 20% 20% 20% 20%;
     /*grid width: 25%;*/
     /*flex: 50%;*/
@@ -33,13 +35,13 @@ also to make header stick, body to scroll
   font-family: Radley;
   color: #F0E6C7;   
 }
-a:link{
+header a:link{
     text-decoration: none;
 }
-a:visited{
-    color:#CB950C;
+header a:visited{
+    color:white;
 }
-a:hover{
+header a:hover{
     text-decoration: line-through;
 }   
 
