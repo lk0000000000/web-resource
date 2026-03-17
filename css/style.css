@@ -12,6 +12,22 @@
     font-family: RadleyItalic;
     src: url(../fonts/Radley-Italic.ttf);
 }
+@font-face {
+    font-family: Zeyada;
+    src: url(../fonts/Zeyada-Regular.ttf);
+}
+@font-face {
+    font-family: Zain;
+    src: url(../fonts/Zain-Regular.ttf);
+}
+@font-face {
+    font-family: ZainLight;
+    src: url(../fonts/Zain-Light.ttf);
+}
+@font-face {
+    font-family: ZainItalic;
+    src: url(../fonts/Zain-Italic.ttf);
+}
 /*ask if possible to have global css styling on multiple pages
 also to make header stick, body to scroll
 */
@@ -32,16 +48,16 @@ also to make header stick, body to scroll
 
 }
 .headerText{
-  font-family: Radley;
-  color: #F0E6C7;   
+  font-family: Zain;
+  color: white;   
 }
-header a:link{
+.header a:link{
     text-decoration: none;
 }
-header a:visited{
+.header a:visited{
     color:white;
 }
-header a:hover{
+.header a:hover{
     text-decoration: line-through;
 }   
 
@@ -49,26 +65,30 @@ header a:hover{
     padding-left: 30px;
     margin-top: 70px;
     margin-bottom: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
     /*min-height: auto;*/
     max-height: fit-content;
     position:relative;
     /*align-items: center;*/
 }
 h1{
-    font-family: Radley;
+    font-family: Zeyada;
+    padding: 60px;
+    font-size: 60px;
 }
 #welcome{
-    max-width: 75%;
+    /*max-width: 75%;*/
     padding-left: 30px;
 }
 .welcomeText{
     /*color: grey;*/
-    font-family: Radley;
+    font-family: ZainLight;
     margin-top: 1cm;
-    font-size: 14pt;
+    font-size: 18pt;
     /*letter-spacing: 0.5px;*/
-    line-height: 17pt;
-    max-width: 45%;
+    line-height: 20pt;
+    /*max-width: 45%;*/
 }
 #footer{
     /*display: flex;*/
@@ -78,9 +98,9 @@ h1{
 }
 .footerText{
     font-size: xx-small;
-    font-weight: lighter;
+    font-family: zain;
     color: #F0E6C7;
-    text-align: center; 
+    text-align: center;
 }
 
 #pageCards{

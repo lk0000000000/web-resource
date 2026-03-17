@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+@font-face {
+    font-family: Radley;
+    src: url(../fonts/Radley-Regular.ttf);
+}
+@font-face {
+    font-family: RadleyItalic;
+    src: url(../fonts/Radley-Italic.ttf);
+}
+@font-face {
+    font-family: Zeyada;
+    src: url(../fonts/Zeyada-Regular.ttf);
+}
+@font-face {
+    font-family: Zain;
+    src: url(../fonts/Zain-Regular.ttf);
+}
+@font-face {
+    font-family: ZainLight;
+    src: url(../fonts/Zain-Light.ttf);
+}
+@font-face {
+    font-family: ZainItalic;
+    src: url(../fonts/Zain-Italic.ttf);
+}
+
+.header{
+    display: grid;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    /*grid width: 25%;*/
+    /*flex: 50%;*/
+    padding: 10px;
+    background-color: #1B9BF7;
+    /*border-radius: 15px;*/
+    /*align-items: center;*/
+    width: 100%;
+    height: 30px;
+    /*transition-duration: 2s;*/
+
+}
+.headerText{
+  font-family: Zain;
+  color: white;
+}
+.header a{
+    text-decoration: none;
+}
+.header a:visited{
+    color:rgb(255, 255, 255);
+}
+.header a:hover{
+    text-decoration: line-through;
+}
+
+#about{
+    margin-left: 25%;
+    margin-right:25%;
+
+}
+
+
+h1{
+    font-family: Zeyada;
+    padding: 60px;
+    font-size: 60px;
+}
+#article{
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    font-family: ZainLight;
+    padding: 60px;
+    font-size: 20px;
+}
