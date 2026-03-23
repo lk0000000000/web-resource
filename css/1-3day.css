@@ -136,6 +136,7 @@ font-family: Zain;
 
 .sidenav{
 height: fit-content;
+max-height: 75%;
 width: 0;
 position: fixed;
 z-index: 1; /*top layer */
