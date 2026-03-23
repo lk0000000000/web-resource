@@ -68,6 +68,7 @@
     margin-right: 25%;
     /*min-height: auto;*/
     max-height: fit-content;
+    min-height: 100%;
     position:relative;
     /*align-items: center;*/
 }
@@ -77,19 +78,19 @@ h1{
     font-size: 60px;
     text-align: center;
 }
-#welcome{
-    /*max-width: 75%;*/
-    /*padding-left: 30px;*/
+/*#welcome{
+    max-width: 75%;
+    padding-left: 30px;
     margin-left: 25%;
     margin-right:25%;
-}
+}*/
 .welcomeText{
     /*color: grey;*/
     font-family: ZainLight;
     margin-top: 1cm;
-    font-size: 18pt;
+    font-size: 25px;
     /*letter-spacing: 0.5px;*/
-    line-height: 20pt;
+    /*line-height: 20pt;*/
     /*max-width: 45%;*/
 }
 #footer{
@@ -138,4 +139,37 @@ img {
     text-align: center;
     background-color: white;
     border-radius: 0 0 15px 15px;
+}
+
+@media screen and (max-width: 480px){
+    #Homepage{
+
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: fit-content;
+    min-height: 100%;
+    position:relative;
+}
+h1{
+    font-size: 50px;
+    text-align: left;
+    padding: 10px;
+}
+
+
+    #pageCards{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+
+.welcomeText{
+    font-size: 20px;
+}
+
 }

@@ -208,12 +208,29 @@ $(".reset").click(function(){ //clear all filters
 
 
 //sidebar checklist logic
-function openNav() {
-document.getElementById("sidebar").style.width = "15%";
-//document.body.style.backgroundColor = "rgba(0,0,0,0.15)";
-}
+var viewportWidth = window.innerWidth;
+if (viewportWidth <= 480){
+    function openNav() {
+    document.getElementById("sidebar").style.height = "15%";
+    document.getElementById("sidebar").style.visibility = "visible";
+    }
+    function closeNav() {
+    document.getElementById("sidebar").style.height = "0";
+    //document.body.style.backgroundColor = "white";
 
-function closeNav() {
-document.getElementById("sidebar").style.width = "0";
-//document.body.style.backgroundColor = "white";
+    document.getElementById("sidebar").style.visibility = "hidden";
+    }
+} 
+else{
+    function openNav() {
+    document.getElementById("sidebar").style.width = "20%";
+    //document.body.style.backgroundColor = "rgba(0,0,0,0.15)";
+    document.getElementById("sidebar").style.visibility = "visible";
+    }
+    function closeNav() {
+    document.getElementById("sidebar").style.width = "0";
+    //document.body.style.backgroundColor = "white";
+
+    document.getElementById("sidebar").style.visibility = "hidden";
+    }
 }
