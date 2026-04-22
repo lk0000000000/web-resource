@@ -20,42 +20,40 @@
         
         <div id="article">
             <p>
-Packing for a one to three day trip is nice and simple: everything that you might possibly need will fit into a humble backpack. <br>
+A trip lasting longer than a week ideally implies you will have access to laundry facilities at some point 
+during your stay. Seeing as this category can encompass stays lasting over a 
+month, a laundry machine is non-negotiable, whether it be in-house or at a 
+laundromat.<br>
 
-A one day trip does not require much: your toiletries and clothes don't need to leave your home, 
-since you will be returning the same day. 
-Oftentimes, you won't even be needing a charger 
-(though it's better to be safe than sorry), or, depending on 
-your method of transport, a backpack at all! <br>
-Here's a tentative list:<br>
+A trip lasting a week or more seems daunting to pack for on paper, but 
+remember: each laundry cycle basically resets the amount of days you will 
+really be packing for. Knowing this, your packing can be broken into the same 
+manageable chunks of 5 days maximum (and can all fit into a backpack!). 
+Accounting for variety, your packing list wouldn’t be much longer:<br>
 <ul style="list-style-type:circle;">
-    <li>Wallet, keys, phone</li>
-    <li>Headphones</li>
-    <li>Charger</li>
-    <li>Weather-appropriate clothing</li>
-</ul>
-
-
-You can choose to bring some toiletries like lip balm, perfume spray, and makeup, 
-but it really isn't necessary if you're traveling light.<br>
-
-For a two to three days stay, you will need to bring a change of clothes. 
-Depending on your scruples on personal hygiene, it can be one, 
-two, or three shirts. As a general rule, a shirt can be worn twice 
-without issue, so a two to three day packing list can look 
-something like this:<br>
-<ul style="list-style-type:circle;">
-    <li>1 or 2 pairs of socks</li>
-    <li>1 or 2 pairs of underwear</li>
-    <li>1 shirt</li>
+    <li>4 pairs of socks</li>
+    <li>4 pairs of underwear</li>
+    <li>4 shirts</li>
+    <li>2 pair of pants or skirt</li>
+    <li>1 pair of shoes</li>
     <li>Toiletry bag containing a toothbrush, toothpaste, floss, deodorant, bar soap</li>
     <li>Wallet, keys, phone</li>
     <li>Headphones</li>
     <li>Charger</li>
+    
 </ul>
-
-Everything else is already on your person. This list can further be modified to include 
-any makeup or formal wear you might be needing.
+As always, this list omits the clothing that you will be wearing to your 
+destination, so in total, you would have one more copy of some clothing items. 
+For variety, I have added an extra shirt for your cycle, but realistically you 
+could even add a fifth shirt for a total of six options to choose from. Your 
+bottoms do not need to be as varied; with a total of three bottoms to choose 
+from, you should have enough style permutations to last you a long while. You 
+may have noticed I had added an extra pair of shoes. While I think for most 
+situations you would be fine with just one pair, for an extended stay, you 
+will need an extra pair for backup (for weather or variety reasons). Anything 
+extra like formal wear and other trip-specific apparel can still comfortably 
+fit into a larger backpack. Consider also bringing a shopping tote for 
+groceries if you don’t want to unpack your entire life to reuse your backpack.
             </p>
             <p>
                 For your planning convenience, you can use the simple clothing picker below!
@@ -66,7 +64,10 @@ any makeup or formal wear you might be needing.
 
         
 
-        <div id="weather-filter">
+        
+    </div>
+
+<div id="weather-filter">
             <h3>What to wear based on the weather at your destination</h3>
             <div class="filter-tags">
                 
@@ -111,9 +112,6 @@ any makeup or formal wear you might be needing.
             </div>
 
         </div>
-    </div>
-
-
 
 
         <div id="sidebar" class="sidenav"> <!--checklist-->
@@ -130,27 +128,35 @@ any makeup or formal wear you might be needing.
                 
             </div> -->
             <label class="checklist-item">Wallet, keys, phone, charger
-                <input type="checkbox" checked="checked">
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
             <label class="checklist-item">Headphones
-                <input type="checkbox" checked="checked">
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
-            <label class="checklist-item">1 shirt
-                <input type="checkbox" checked="checked">
+            <label class="checklist-item">4 shirts
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
-            <label class="checklist-item">2 pairs of socks
-                <input type="checkbox" checked="checked">
+            <label class="checklist-item">2 pairs of pants or skirt
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
-            <label class="checklist-item">2 pairs of underwear
-                <input type="checkbox" checked="checked">
+            <label class="checklist-item">1 pair of shoes
+                <input type="checkbox" :not(:checked)>
+                <span class="checkmark"></span>
+            </label>
+            <label class="checklist-item">4 pairs of socks
+                <input type="checkbox" :not(:checked)>
+                <span class="checkmark"></span>
+            </label>
+            <label class="checklist-item">4 pairs of underwear
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
             <label class="checklist-item">Toothbrush, toothpaste, floss, deodorant, bar soap
-                <input type="checkbox" checked="checked">
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
 

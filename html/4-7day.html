@@ -20,42 +20,49 @@
         
         <div id="article">
             <p>
-Packing for a one to three day trip is nice and simple: everything that you might possibly need will fit into a humble backpack. <br>
-
-A one day trip does not require much: your toiletries and clothes don't need to leave your home, 
-since you will be returning the same day. 
-Oftentimes, you won't even be needing a charger 
-(though it's better to be safe than sorry), or, depending on 
-your method of transport, a backpack at all! <br>
-Here's a tentative list:<br>
+A four to seven day trip’s worth of clothing ideally fits into a backpack! If you have 
+access to a laundry machine, it really reduces the amount of clothes you will 
+need to bring with you. This depends on a few factors though. If you are going 
+to be staying in different places, it will not be as practical to wait for 
+your laundry to finish drying overnight (not every place will have a dryer!). 
+If you will be able to use the laundry machine to your full advantage, pack 
+your clothes as though you will be doing laundry every third day. This means 
+that you can ideally pack a maximum of two shirts (with a third one worn on 
+your person). But for a trip that’s almost a week, you would probably want 
+variety, so throw in one extra shirt.<br>
+Obviously you also want to take your bathing things and your essential 
+technology, so throw that into the mix as well. Headphones and a downloaded 
+book are always a necessity in my opinion because of all the travel time to 
+and from your various destinations.<br>
+Here’s a sample list (if you have laundry access):<br>
 <ul style="list-style-type:circle;">
-    <li>Wallet, keys, phone</li>
-    <li>Headphones</li>
-    <li>Charger</li>
-    <li>Weather-appropriate clothing</li>
-</ul>
-
-
-You can choose to bring some toiletries like lip balm, perfume spray, and makeup, 
-but it really isn't necessary if you're traveling light.<br>
-
-For a two to three days stay, you will need to bring a change of clothes. 
-Depending on your scruples on personal hygiene, it can be one, 
-two, or three shirts. As a general rule, a shirt can be worn twice 
-without issue, so a two to three day packing list can look 
-something like this:<br>
-<ul style="list-style-type:circle;">
-    <li>1 or 2 pairs of socks</li>
-    <li>1 or 2 pairs of underwear</li>
-    <li>1 shirt</li>
+    <li>4 pairs of socks</li>
+    <li>4 pairs of underwear</li>
+    <li>3 shirts</li>
+    <li>1 pair of pants or skirt</li>
     <li>Toiletry bag containing a toothbrush, toothpaste, floss, deodorant, bar soap</li>
-    <li>Wallet, keys, phone</li>
+    <li>Wallet, phone, keys</li>
     <li>Headphones</li>
     <li>Charger</li>
 </ul>
-
-Everything else is already on your person. This list can further be modified to include 
-any makeup or formal wear you might be needing.
+This list doesn’t include what you will be wearing on your person, so overall 
+you would have one more copy of most of your clothing staples. Note on choice 
+of bottoms: if you will be wearing a type of bottom, try to think about the 
+weather and pack something a little bit different for the extra thing you will 
+be bringing (jeans and shorts, for example, or thicker pants and thinner pants). 
+For colder regions you will still have to bring something corresponding to the 
+temperature, but you can get creative with styling: different types of long 
+pants, or a long skirt and fleece tights combo. This will keep your limited 
+trip wardrobe varied enough for any slight variation in weather during your stay. <br>
+If you will not have access to laundry at all on your trip, you won’t have to change 
+much from my initial list aside from more socks and underwear. I am a strong 
+believer of wearing shirts at least twice as they really do not get stinky 
+after one wear. But if you are going to be visiting a really hot climate, 
+I would pack another shirt. Worst case scenario, socks and underwear could 
+be washed in a sink with the bar soap you will be bringing, but if you do 
+not want to deal with drying time and dubious cleansing, bring a pair of 
+each for every day of your stay.<br>
+This list doesn’t include any trip-specific necessities like formal wear, so pack anything extra accordingly.
             </p>
             <p>
                 For your planning convenience, you can use the simple clothing picker below!
@@ -63,10 +70,13 @@ any makeup or formal wear you might be needing.
                 give you a general idea of what clothing to bring with you!
             </p>
         </div>
-
+        
         
 
-        <div id="weather-filter">
+        
+    </div>
+
+    <div id="weather-filter">
             <h3>What to wear based on the weather at your destination</h3>
             <div class="filter-tags">
                 
@@ -111,9 +121,6 @@ any makeup or formal wear you might be needing.
             </div>
 
         </div>
-    </div>
-
-    
 
 
         <div id="sidebar" class="sidenav"> <!--checklist-->
@@ -130,27 +137,31 @@ any makeup or formal wear you might be needing.
                 
             </div> -->
             <label class="checklist-item">Wallet, keys, phone, charger
-                <input type="checkbox" checked="checked">
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
             <label class="checklist-item">Headphones
-                <input type="checkbox" checked="checked">
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
-            <label class="checklist-item">1 shirt
-                <input type="checkbox" checked="checked">
+            <label class="checklist-item">3 shirts
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
-            <label class="checklist-item">2 pairs of socks
-                <input type="checkbox" checked="checked">
+            <label class="checklist-item">1 pair of pants or skirt
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
-            <label class="checklist-item">2 pairs of underwear
-                <input type="checkbox" checked="checked">
+            <label class="checklist-item">4 pairs of socks
+                <input type="checkbox" :not(:checked)>
+                <span class="checkmark"></span>
+            </label>
+            <label class="checklist-item">4 pairs of underwear
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
             <label class="checklist-item">Toothbrush, toothpaste, floss, deodorant, bar soap
-                <input type="checkbox" checked="checked">
+                <input type="checkbox" :not(:checked)>
                 <span class="checkmark"></span>
             </label>
 
